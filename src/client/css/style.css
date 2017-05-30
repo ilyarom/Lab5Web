@@ -1,0 +1,118 @@
+ol, ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#files {
+  margin-left: 0;
+  list-style: none;
+  counter-reset: li;
+  font-family: calibri;
+}
+#files li {
+  padding: 10px 0;
+  position: relative;
+  left: 1.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  background: #E3DEDC;
+}
+#files li:before {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.5em;
+  width: 1.875em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: #D66786;
+  border-bottom-left-radius: 70em;
+  border-top-left-radius: 70em;
+  counter-increment: li;
+  content: counter(li);
+}
+.onoffswitch {
+    position: relative; width: 90px;
+    margin: 30px auto;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "GET";
+    padding-left: 10px;
+    background-color: #269926; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "DELETE";
+    padding-right: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    background-color: #A60000; color: #fff;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    display: block;
+    padding: 13px 99px;
+    text-decoration: none;
+    margin: 18px auto;
+    cursor: pointer;
+}
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+input
+{
+    width: 300px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+img 
+{
+    width: 100%;
+}
+#input
+{
+  
+}
